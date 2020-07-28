@@ -1,0 +1,68 @@
+@import "variables.scss";
+
+.experiences {
+  background-color: white;
+  padding: 80px 0 100px;
+  position: relative;
+
+
+  &__company {
+    margin-bottom: 10px;
+
+    span {
+      background-color: $mainDarkBlue;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 2px;
+    }
+  }
+
+  &__position {
+    margin-bottom: 10px;
+
+    span {
+      background-color: $mainLightBlue;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-radius: 2px;
+    }
+  }
+
+  &__year {
+    margin-bottom: 10px;
+
+    span {
+      letter-spacing: 1.3px;
+      color: $mainLightGrey;
+      font-size: 16px
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .num-icon {
+      font-size: 16px;
+    }
+
+    .highlight-text {
+      background: $mainLightBlue;
+      padding: 0 2px
+    }
+  }
+
+}
+
+.ant-timeline {
+  width: 80vw;
+  margin: 40px auto 0;
+  color: $primaryColor !important
+}

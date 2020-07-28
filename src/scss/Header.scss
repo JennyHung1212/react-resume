@@ -1,0 +1,38 @@
+@import "variables.scss";
+
+.top-nav {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  background: $mainDarkBlue;
+  font-size: 16px;
+  border-bottom: 2px solid $mainDarkBlue;
+  letter-spacing: 1.5px;
+
+  a {
+    color: white !important;
+  }
+
+  .ant-menu-item {
+    padding: 0 40px;
+    border-bottom: none;
+    top: 0;
+    font-weight: 600;
+
+    &:hover {
+      border-bottom: none !important;
+      color: white !important;
+      background-color: rgba(11, 66, 121, 0.8) !important;
+    }
+  }
+
+  .ant-menu-item-selected {
+    border-bottom: none !important;
+    background-color: rgba(11, 66, 121, 0.8) !important;
+
+    a {
+      color: white !important;
+    }
+  }
+}
