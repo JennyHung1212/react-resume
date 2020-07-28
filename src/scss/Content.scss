@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+.content {
+  background-color: $backgroundColor;
+  font-size: 16px;
+  color: $primaryColor;
+
+  .section-title {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    color: $titleColor;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    letter-spacing: 1.5px;
+
+    span {
+      z-index: 100;
+      position: relative;
+    }
+  }
+
+  .section-title-bg {
+    font-family: 'Dancing Script', cursive;
+    font-size: 165px;
+    color: rgba(197, 203, 204, 0.2);
+    text-align: center;
+    z-index: 50;
+    position: absolute
+  }
+}

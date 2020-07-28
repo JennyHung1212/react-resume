@@ -1,0 +1,131 @@
+@import "variables.scss";
+
+.skills {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px 0px rgba(168, 168, 168, 0.75);
+  width: 70vw;
+  margin: auto;
+  margin-bottom: 80px;
+  padding: 100px 60px 80px;
+  position: relative
+}
+
+.skills-content {
+  padding-bottom: 20px;
+
+  &__title {
+    color: $mainLightGrey;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .others {
+    margin-top: 20px;
+    justify-content: left;
+
+    span {
+      padding: 2px 8px;
+      border-radius: 3px;
+      background-color: rgba(204, 158, 120, 0.7);
+      color: white;
+      font-weight: 600;
+      margin: 0 8px 8px 0;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .language {
+    margin-top: 20px;
+
+    p {
+      padding: 2px 8px;
+      border-radius: 3px;
+      background-color: rgba(206, 131, 153, 0.7);
+      color: white;
+      font-weight: 600;
+      margin: 0 4px 8px 4px;
+      letter-spacing: 0.5px
+    }
+  }
+}
+
+.skills-title {
+  background: $titleColor;
+  color: white !important;
+  width: 350px;
+  height: 70px;
+  line-height: 70px;
+  position: absolute;
+  top: 10px;
+  left: -100px;
+  transform: rotate(350deg)
+}
+
+.ant-progress {
+  margin: 20px 0;
+  width: 20%;
+  text-align: center;
+}
+
+.ant-progress-circle .ant-progress-text {
+  font-size: 18px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.ant-progress:nth-child(1),
+.ant-progress:nth-child(2),
+.ant-progress:nth-child(3),
+.ant-progress:nth-child(4) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+    stroke: #70A582;
+  }
+
+  .ant-progress-text {
+    color: #70A582;
+  }
+}
+
+.ant-progress:nth-child(5),
+.ant-progress:nth-child(6),
+.ant-progress:nth-child(7) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+    stroke: #7093A5;
+  }
+
+  .ant-progress-text {
+    color: #7093A5;
+  }
+}
+
+.ant-progress:nth-child(8),
+.ant-progress:nth-child(9),
+.ant-progress:nth-child(10) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+    stroke: rgb(129, 124, 141);
+  }
+
+  .ant-progress-text {
+    color: rgb(129, 124, 141);
+  }
+}
+
+.app .ant-progress:nth-child(1),
+.app .ant-progress:nth-child(2) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+    stroke: rgb(146, 109, 134);
+  }
+
+  .ant-progress-text {
+    color: rgb(146, 109, 134);
+  }
+}

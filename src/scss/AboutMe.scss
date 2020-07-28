@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+.about-me {
+  padding: 80px 0 130px;
+
+  &__content {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+  }
+}

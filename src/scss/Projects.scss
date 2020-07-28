@@ -1,0 +1,113 @@
+@import "variables.scss";
+
+.projects {
+  background-color: $backgroundColor;
+  padding: 80px 15vw;
+  position: relative;
+}
+
+.projects-wrapper {
+  column-count: 2;
+  column-gap: 1em;
+}
+
+.projects-card {
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px 0px rgba(168, 168, 168, 0.75);
+  width: 100%;
+  position: relative;
+  background-color: white;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+
+  &__img {
+    height: 270px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in 0s;
+
+    &:hover {
+      background-size: 115%
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    span {
+      font-size: 20px;
+      background-color: rgba(29, 41, 68, 0.75);
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 2px 10px;
+    }
+  }
+
+  &__subtitle {
+    span {
+      font-family: "Titillium Web", sans-serif;
+      font-size: 16px;
+      background-color: rgba(11, 73, 131, 0.75);
+      font-weight: 400;
+      padding: 2px 10px;
+    }
+  }
+
+  &__content {
+    padding: 16px 14px 4px;
+
+    p:nth-child(2) {
+      font-weight: 600
+    }
+
+    p:nth-child(3) {
+      text-align: right;
+      margin-bottom: 0;
+
+      a {
+        color: $primaryColor;
+        font-weight: 600;
+        background-color: $mainLightBlue;
+        padding: 3px 6px;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.ant-collapse-borderless {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  margin-top: -40px;
+  z-index: 2;
+
+  .ant-collapse-item {
+    border-bottom: none;
+  }
+}
+
+.ant-collapse {
+  .ant-collapse-item {
+    .ant-collapse-header {
+      height: 40px;
+
+      .ant-collapse-arrow {
+        left: calc(50% - 12px);
+        color: white;
+        font-size: 24px;
+      }
+    }
+  }
+}
