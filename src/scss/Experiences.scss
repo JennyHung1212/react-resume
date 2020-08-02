@@ -64,5 +64,9 @@
 .ant-timeline {
   width: 80vw;
   margin: 40px auto 0;
-  color: $primaryColor !important
+  color: $primaryColor !important;
+
+  @include md {
+    width: 90vw;
+  }
 }

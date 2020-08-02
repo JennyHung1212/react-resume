@@ -8,7 +8,22 @@
   margin: auto;
   margin-bottom: 80px;
   padding: 100px 60px 80px;
-  position: relative
+  position: relative;
+
+  @include lg {
+    width: 80vw;
+    padding: 100px 40px 80px;
+  }
+
+  @include md {
+    width: 85vw;
+    padding: 70px 25px 40px
+  }
+
+  @include sm {
+    width: 95vw;
+    padding: 70px 10px 20px
+  }
 }
 
 .skills-content {
@@ -20,6 +35,10 @@
     font-size: 20px;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
+
+    @include sm {
+      margin-bottom: 15px
+    }
   }
 
   &__items {
@@ -40,6 +59,10 @@
       font-weight: 600;
       margin: 0 8px 8px 0;
       letter-spacing: 0.5px;
+
+      @include sm {
+        margin: 0 5px 5px 0;
+      }
     }
   }
 
@@ -53,7 +76,11 @@
       color: white;
       font-weight: 600;
       margin: 0 4px 8px 4px;
-      letter-spacing: 0.5px
+      letter-spacing: 0.5px;
+
+      @include sm {
+        margin: 0 3px 5px 3px;
+      }
     }
   }
 }
@@ -67,19 +94,44 @@
   position: absolute;
   top: 10px;
   left: -100px;
-  transform: rotate(350deg)
+  transform: rotate(350deg);
+
+  @include lg {
+    left: -50px;
+  }
+
+  @include md {
+    transform: rotate(0deg);
+    position: absolute;
+    left: calc(50% - 175px);
+    top: -30px;
+  }
 }
 
 .ant-progress {
-  margin: 20px 0;
-  width: 20%;
+  margin: 20px 10px;
   text-align: center;
+
+  @include sm {
+    margin: 10px;
+  }
+}
+
+.ant-progress-inner {
+  @include sm {
+    width: 90px !important;
+    height: 90px !important;
+  }
 }
 
 .ant-progress-circle .ant-progress-text {
   font-size: 18px;
   font-weight: 600;
   word-break: break-word;
+
+  @include sm {
+    font-size: 16px;
+  }
 }
 
 .ant-progress:nth-child(1),
