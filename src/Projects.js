@@ -5,13 +5,13 @@ import { Collapse } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
 
-import owlsomePatent from "./image/owlsome-patent.png";
-import eKeeper from "./image/eKeeper.png";
-import eKeeperApp from "./image/eKeeper-app.png";
-import owlsomeTech from "./image/owlsome-tech.png";
-import resume from "./image/resume.png";
-import personal from "./image/personal-website.png";
-import whoscall from "./image/whoscall.png";
+import owlsomePatent from "./image/owlsome-patent.jpg";
+import eKeeper from "./image/eKeeper.jpg";
+import eKeeperApp from "./image/eKeeper-app.jpg";
+import owlsomeTech from "./image/owlsome-tech.jpg";
+import resume from "./image/resume.jpg";
+import personal from "./image/personal-website.jpg";
+import whoscall from "./image/whoscall.jpg";
 
 const Projects = () => {
   const projects = [
@@ -94,7 +94,7 @@ const Projects = () => {
       subContent: "Django, JavaScript, CSS, Python",
       link: "",
       img:
-        "https://images.cakeresume.com/76340e/4c171098-1f16-444d-a7b4-39cb2aa5bd13.png",
+        "https://images.cakeresume.com/76340e/4c171098-1f16-444d-a7b4-39cb2aa5bd13.jpg",
     },
   ];
   return (
