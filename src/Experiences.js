@@ -79,7 +79,9 @@ const Experiences = () => {
       >
         experiences
       </div>
-      <Timeline mode="alternate">
+      <Timeline
+        mode={window.matchMedia("(max-width: 768x)") ? "left" : "alternate"}
+      >
         {experiences.map((o, idx) => (
           <Timeline.Item key={idx} color={"rgb(11, 73, 131)"}>
             <div className="experiences__company">

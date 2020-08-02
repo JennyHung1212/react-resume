@@ -1,6 +1,49 @@
-$backgroundColor: #ECF0F1;
+$backgroundColor: #ecf0f1;
 $mainLightBlue: #eaf2f8;
-$mainDarkBlue:rgb(11, 73, 131);
+$mainDarkBlue: rgb(11, 73, 131);
 $mainLightGrey: #94989c;
 $titleColor: rgb(29, 41, 68);
 $primaryColor: rgb(74, 79, 83);
+
+$desktop-breakpoint: 1680px; // xxl
+$laptop-breakpoint: 1440px; // xl
+$big-tablet-breakpoint: 1024px; // lg
+$tablet-breakpoint: 768px; // md
+$mobile-breakpoint: 576px; // sm
+$small-mobile-breakpoint: 360px; // xs
+
+@mixin xs {
+  @media (max-width: $small-mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $big-tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: $laptop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (max-width: $desktop-breakpoint) {
+    @content;
+  }
+}

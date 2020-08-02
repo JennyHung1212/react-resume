@@ -4,11 +4,23 @@
   background-color: $backgroundColor;
   padding: 80px 15vw;
   position: relative;
+
+  @include lg {
+    padding: 80px 8vw;
+  }
+
+  @include md {
+    padding: 60px 4vw;
+  }
 }
 
 .projects-wrapper {
   column-count: 2;
   column-gap: 1em;
+
+  @include sm {
+    column-count: 1;
+  }
 }
 
 .projects-card {
@@ -18,8 +30,12 @@
   width: 100%;
   position: relative;
   background-color: white;
-  margin: 0 0 1em 0;
+  margin-bottom: 1em;
   overflow: hidden;
+
+  @include sm {
+    margin-bottom: 10px;
+  }
 
   &__img {
     height: 270px;
