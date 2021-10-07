@@ -1,10 +1,10 @@
 import React from "react";
 import "./scss/Home.scss";
-import self from "./image/self.jpg";
+// import self from "./image/self.jpg";
 
 import {
   // LinkedinOutlined,
-  HomeOutlined,
+  // HomeOutlined,
   PhoneOutlined,
   MailOutlined,
   InfoCircleOutlined,
@@ -19,10 +19,16 @@ class Home extends React.Component {
           <p className="home__name">Hi, I'm</p>
           <p className="home__name">Jenny Hung</p>
           <p className="home__content">
-            I'm a frontend developer, a mobile app developer, a eager learner,
+            I'm a frontend developer, a mobile app developer, an eager learner,
             and also an adventurer.
           </p>
           <div className="home__info">
+            <div>
+              <span style={{ paddingRight: "10px" }}>
+                Information Management, BA, National Taiwan University
+              </span>
+              <InfoCircleOutlined />
+            </div>
             <div>
               <span style={{ paddingRight: "10px" }}>
                 <a
@@ -38,23 +44,17 @@ class Home extends React.Component {
               <span style={{ paddingRight: "10px" }}>+886 988-775-407</span>
               <PhoneOutlined />
             </div>
-            <div>
+            {/* <div>
               <span style={{ paddingRight: "10px" }}>
                 145 Newbury Ave, Quincy, MA 02171
               </span>
               <HomeOutlined />
-            </div>
-            <div>
-              <span style={{ paddingRight: "10px" }}>
-                US permanent resident
-              </span>
-              <InfoCircleOutlined />
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="home__photo">
+        {/* <div className="home__photo">
           <img src={self} alt=""></img>
-        </div>
+        </div> */}
         <div className="home__square"></div>
         <div className="home__frame"></div>
       </div>

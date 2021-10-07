@@ -47,8 +47,8 @@
     position: absolute;
     top: 17vh;
     left: 16vw;
-    width: 42vw;
-    height: 63vh;
+    width: 60vw;
+    height: 70vh;
     background: white;
     border-radius: 3px;
     z-index: 4;
@@ -194,7 +194,7 @@
     position: absolute;
     right: 10vw;
     top: 15vh;
-    z-index: 1;
+    z-index: 3;
     transform: rotate(10deg);
 
     @include xl {

@@ -16,9 +16,12 @@
 
   a {
     color: white !important;
+    padding: 0 40px;
   }
 
   .ant-menu-item {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     padding: 0 40px;
     border-bottom: none;
     top: 0;

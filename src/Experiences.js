@@ -10,7 +10,7 @@ class Experiences extends React.Component {
       {
         company: "Owlsome Tech",
         year: "2019/07 ~ present",
-        position: "Frontend / App Developer",
+        position: "Software Developer",
         content: [
           "<span class='num-icon'>①</span> Corresponded with PM and team members to allocate users'requirements into different task descriptions according to the hierarchy of needs" +
             "and applied <span class='highlight-text'>JIRA</span> tickets for the task management, <span class='highlight-text'>Circle CI</span>," +
@@ -31,7 +31,8 @@ class Experiences extends React.Component {
         year: "2019/01 ~ 2019/05",
         position: "Information Systems Technology and Design Pillar",
         content: [
-          "<span class='num-icon'>①</span> Received TF LEaRN scholarship and a full tuition waiver.",
+          "<span class='num-icon'>①</span> Winner of Temasek Founda?on Interna?onal Leadership Enrichment and Regional Networking Program Award.",
+          "<span class='num-icon'>②</span> Received full scholarship.",
         ],
       },
       {

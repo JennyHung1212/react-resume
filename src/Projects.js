@@ -12,6 +12,7 @@ import owlsomeTech from "./image/owlsome-tech.jpg";
 import resume from "./image/resume.jpg";
 import personal from "./image/personal-website.jpg";
 import whoscall from "./image/whoscall.jpg";
+import drwells from "./image/dr-wells.png";
 
 const Projects = () => {
   const projects = [
@@ -31,7 +32,7 @@ const Projects = () => {
       content:
         "A role-based access control system that adapted MQTT as a communication protocol for transferring data from the sensor to server, " +
         "collecting, and displaying data in real-time of nearly 600 elevators and escalators across Taiwan and Singapore. " +
-        "By converting thousands of raw data sent from MQTT server to statistic numbers with analytical insights, managers are allowed to monitor the condition of elevators and controlled the schedule of repair and maintenance.",
+        "By converting thousands of raw data sent from the MQTT server to statistic numbers with analytical insights, managers are allowed to monitor the condition of elevators and controlled the schedule of repair and maintenance.",
       subContent:
         "Teck Skill: Vue.js, Vuex, CSS, Data Visualization (ECharts), Server-sent events, Element UI, Ant Design, Bootstrap, TestCafe",
       link: "",
@@ -70,10 +71,10 @@ const Projects = () => {
       subtitle: "Personal Project",
       content:
         "When I was an exchange student in Singapore, being away from my friends and family, I had lots of alone time. " +
-        "That's when I relized the best way to kill time is to learn a new skill. I decided to learned Vue.js and built a website from scratch with it where I could upload my weekly diaries. " +
-        "I won't say that the sense of accomplishment of building my own website made me want to become a frontend developer, but it did give me a direction in career path.",
+        "That's when I realized the best way to kill time is to learn a new skill. I decided to learned Vue.js and built a website from scratch with it where I could upload my weekly diaries. " +
+        "I won't say that the sense of accomplishment of building my own website made me want to become a frontend developer, but it did give me a direction in my career path.",
       subContent: "Teck Skill: Vue.js, SCSS, GitHub Pages, Babel",
-      link: "https://www.jennyhung.tw/#/life-in-sg",
+      link: "https://blog.jennyhung.tw/#/life-in-sg",
       img: personal,
     },
     {
@@ -89,12 +90,11 @@ const Projects = () => {
       title: "Dr. Wells scheduling system",
       subtitle: "School project",
       content:
-        "Participated in an industry-academia cooperation project and wrote an auto-scheduling system built on top of genetic algorithm with the knowledge of Operations Research." +
-        "As one of the member of a six-student group, I mainly responsible for reviewing client needs and frontend development.",
+        "Participated in an industry-academia cooperation project and wrote an auto-scheduling system built on top of a genetic algorithm with the knowledge of Operations Research." +
+        "As one of the members of a six-student group, I mainly responsible for reviewing client needs and frontend development.",
       subContent: "Django, JavaScript, CSS, Python",
       link: "",
-      img:
-        "https://images.cakeresume.com/76340e/4c171098-1f16-444d-a7b4-39cb2aa5bd13.jpg",
+      img: drwells,
     },
   ];
   return (
