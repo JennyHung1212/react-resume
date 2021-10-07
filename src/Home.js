@@ -25,7 +25,7 @@ class Home extends React.Component {
           <div className="home__info">
             <div>
               <span style={{ paddingRight: "10px" }}>
-                Information Management, BA, National Taiwan University
+                MS, Software Engineering Systems, Northeastern University
               </span>
               <InfoCircleOutlined />
             </div>
@@ -41,7 +41,7 @@ class Home extends React.Component {
               <MailOutlined />
             </div>
             <div>
-              <span style={{ paddingRight: "10px" }}>+886 988-775-407</span>
+              <span style={{ paddingRight: "10px" }}>(781) 498-9028</span>
               <PhoneOutlined />
             </div>
             {/* <div>
