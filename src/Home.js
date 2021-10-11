@@ -3,7 +3,7 @@ import "./scss/Home.scss";
 // import self from "./image/self.jpg";
 
 import {
-  // LinkedinOutlined,
+  LinkedinOutlined,
   // HomeOutlined,
   PhoneOutlined,
   MailOutlined,
@@ -12,6 +12,16 @@ import {
 import "antd/dist/antd.css";
 
 class Home extends React.Component {
+  componentDidMount() {
+    const frame = document.querySelector(".home__frame");
+    const square = document.querySelector(".home__square");
+    window.addEventListener("scroll", () => {
+      frame.style.transform =
+        "rotate(" + (window.pageYOffset / 50 + 10) + "deg)";
+      square.style.transform =
+        "rotate(" + (window.pageYOffset / 100 + 255) + "deg)";
+    });
+  }
   render() {
     return (
       <div className="home" id="home">
@@ -19,8 +29,8 @@ class Home extends React.Component {
           <p className="home__name">Hi, I'm</p>
           <p className="home__name">Jenny Hung</p>
           <p className="home__content">
-            I'm a frontend developer, a mobile app developer, an eager learner,
-            and also an adventurer.
+            I'm a frontend developer, a software engineer, an eager learner,
+            <br></br> and also an adventurer.
           </p>
           <div className="home__info">
             <div>
@@ -44,12 +54,18 @@ class Home extends React.Component {
               <span style={{ paddingRight: "10px" }}>(781) 498-9028</span>
               <PhoneOutlined />
             </div>
-            {/* <div>
+            <div>
               <span style={{ paddingRight: "10px" }}>
-                145 Newbury Ave, Quincy, MA 02171
+                <a
+                  href="https://www.linkedin.com/in/jennyhung-nchi/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  https://www.linkedin.com/in/jennyhung-nchi/
+                </a>
               </span>
-              <HomeOutlined />
-            </div> */}
+              <LinkedinOutlined />
+            </div>
           </div>
         </div>
         {/* <div className="home__photo">

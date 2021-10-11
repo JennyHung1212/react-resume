@@ -5,12 +5,27 @@
   padding: 80px 0 100px;
   position: relative;
 
+  &__company span {
+    background-color: $mainDarkBlue;
+  }
 
-  &__company {
+  &__school span {
+    background-color: $titleColor;
+  }
+
+  &__position span {
+    background-color: $mainLightBlue;
+  }
+
+  &__degree span {
+    background-color: $backgroundColor;
+  }
+
+  &__company,
+  &__school {
     margin-bottom: 10px;
 
     span {
-      background-color: $mainDarkBlue;
       color: white;
       font-size: 18px;
       font-weight: 700;
@@ -19,11 +34,11 @@
     }
   }
 
-  &__position {
+  &__position,
+  &__degree {
     margin-bottom: 10px;
 
     span {
-      background-color: $mainLightBlue;
       font-size: 18px;
       font-weight: 700;
       padding: 5px 15px;
@@ -37,7 +52,7 @@
     span {
       letter-spacing: 1.3px;
       color: $mainLightGrey;
-      font-size: 16px
+      font-size: 16px;
     }
   }
 
@@ -55,10 +70,9 @@
 
     .highlight-text {
       background: $mainLightBlue;
-      padding: 0 2px
+      padding: 0 2px;
     }
   }
-
 }
 
 .ant-timeline {

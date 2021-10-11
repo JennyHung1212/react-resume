@@ -1,7 +1,9 @@
 @import "variables.scss";
 
 .top-nav {
-  font-family: 'Titillium Web', sans-serif;
+  position: absolute;
+  top: 0;
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
   height: 60px;
   line-height: 60px;
@@ -9,9 +11,12 @@
   font-size: 20px;
   border-bottom: 2px solid $mainDarkBlue;
   letter-spacing: 1.5px;
+  z-index: 200;
+  width: 100vw;
+  transition: 0.5s;
 
   @include xl {
-    font-size: 16px
+    font-size: 16px;
   }
 
   a {

@@ -13,16 +13,37 @@ import resume from "./image/resume.jpg";
 import personal from "./image/personal-website.jpg";
 import whoscall from "./image/whoscall.jpg";
 import drwells from "./image/dr-wells.png";
+import startupWeb from "./image/startup-web.png";
+import alexaFirebase from "./image/alexa-firebase.png";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "企業人才資料庫 (Enterprises & Talents Database)",
+      subtitle: "Company's project",
+      content:
+        "An online search engine for companies and talents in Taiwan. Use node graphs to demonstrate the connections between talents in a certain industry.",
+      subContent: "Tech Skills: Python, Flask, MongoDB, ECharts",
+      link: "http://140.117.75.92/",
+      img: startupWeb,
+    },
+    {
+      title: "Amazon Alexa Account Linking",
+      subtitle: "Company's project",
+      content:
+        "Implemented Alexa account linking process with Firebase. Served a login page with Firebase Hosting and Firebase Functions, managed user's information and implemented OAuth 2.0 using Firebase Authentication.",
+      subContent:
+        "Tech Skills: Firebase (Auth, Hosting, UI, Functions), Alexa Developer Console",
+      link: "",
+      img: alexaFirebase,
+    },
     {
       title: "Owlsome Patents",
       subtitle: "Company's project",
       content:
         "A cloud-based computation engine that allows users to search, download, and categorize patents, providing computation results based on different research scenarios and indicators.",
       subContent:
-        "Tech Skill: Vue.js, Vuex, Stylus, Data Visualization (ECharts), Element UI, Jest, TestCafe, Babel, OAuth2 (Google, Linkedin Login APIs), Third-party payment (Paypal, ECPay)",
+        "Tech Skills: Vue.js, Vuex, Stylus, Data Visualization (ECharts), Element UI, Jest, TestCafe, Babel, OAuth2 (Google, Linkedin Login APIs), Third-party online payment (Paypal, ECPay), RWD, parallax scrolling",
       link: "https://patent.owlsome.tech/",
       img: owlsomePatent,
     },
@@ -34,7 +55,7 @@ const Projects = () => {
         "collecting, and displaying data in real-time of nearly 600 elevators and escalators across Taiwan and Singapore. " +
         "By converting thousands of raw data sent from the MQTT server to statistic numbers with analytical insights, managers are allowed to monitor the condition of elevators and controlled the schedule of repair and maintenance.",
       subContent:
-        "Teck Skill: Vue.js, Vuex, CSS, Data Visualization (ECharts), Server-sent events, Element UI, Ant Design, Bootstrap, TestCafe",
+        "Teck Skills: Vue.js, CSS, Data Visualization (ECharts), Server-sent events, Element UI, Ant Design, Bootstrap, TestCafe, RWD",
       link: "",
       img: eKeeper,
     },
@@ -44,7 +65,7 @@ const Projects = () => {
       content:
         "Mobile version of eKeeper. Provided real-time notification features by Firebase Messaging.",
       subContent:
-        "Tech Skill: Flutter, Dart, Data Visualization (charts_flutter)",
+        "Tech Skills: Flutter, Dart, Data Visualization (charts_flutter)",
       link: "",
       img: eKeeperApp,
     },
@@ -53,7 +74,7 @@ const Projects = () => {
       subtitle: "Company's project",
       content:
         "A static, responsive website with sliders, parallax effect and animations.",
-      subContent: "Teck Skill: jQuery, Stylus, Gulp, RWD",
+      subContent: "Teck Skills: jQuery, Stylus, Gulp, RWD, parallax scrolling",
       link: "https://www.owlsome.tech/",
       img: owlsomeTech,
     },
@@ -62,7 +83,8 @@ const Projects = () => {
       subtitle: "Personal Project",
       content:
         "A platform where I can demonstrate the best of myself. If you are reading this, I want to give you a big thank you for spending time knowing me.",
-      subContent: "Tech Skill: React.js, SCSS, Ant Design, AWS S3",
+      subContent:
+        "Tech Skills: React.js, SCSS, Ant Design, AWS S3, AWS CloudFront, AWS Certificate Manager (ACM)",
       link: "https://github.com/JennyHung1212/react-resume",
       img: resume,
     },
@@ -73,7 +95,7 @@ const Projects = () => {
         "When I was an exchange student in Singapore, being away from my friends and family, I had lots of alone time. " +
         "That's when I realized the best way to kill time is to learn a new skill. I decided to learned Vue.js and built a website from scratch with it where I could upload my weekly diaries. " +
         "I won't say that the sense of accomplishment of building my own website made me want to become a frontend developer, but it did give me a direction in my career path.",
-      subContent: "Teck Skill: Vue.js, SCSS, GitHub Pages, Babel",
+      subContent: "Teck Skills: Vue.js, SCSS, GitHub Pages, Babel",
       link: "https://blog.jennyhung.tw/#/life-in-sg",
       img: personal,
     },
@@ -82,17 +104,17 @@ const Projects = () => {
       subtitle: "Company's project",
       content:
         "A promotion site for Whoscall app with the form submission feature.",
-      subContent: "JavaScript, jQuery, HTML, SCSS, Babel, AWS S3",
+      subContent: "Tech Skills: JavaScript, jQuery, HTML, SCSS, Babel, AWS S3",
       link: "http://events.whoscall.com/2018IAPevent/",
       img: whoscall,
     },
     {
       title: "Dr. Wells scheduling system",
-      subtitle: "School project",
+      subtitle: "Academic project",
       content:
         "Participated in an industry-academia cooperation project and wrote an auto-scheduling system built on top of a genetic algorithm with the knowledge of Operations Research." +
         "As one of the members of a six-student group, I mainly responsible for reviewing client needs and frontend development.",
-      subContent: "Django, JavaScript, CSS, Python",
+      subContent: "Tech Skills: Python, Django, JavaScript, CSS",
       link: "",
       img: drwells,
     },

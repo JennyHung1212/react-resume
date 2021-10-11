@@ -1,10 +1,15 @@
 @import "variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap");
 
 .home {
   height: 100vh;
   position: relative;
-  background: linear-gradient(120deg, rgba(234, 242, 248, 1) 0%, rgba(219, 237, 250, 1) 75%, rgba(177, 212, 237, 1) 100%);
+  background: linear-gradient(
+    120deg,
+    rgba(234, 242, 248, 1) 0%,
+    rgba(219, 237, 250, 1) 75%,
+    rgba(177, 212, 237, 1) 100%
+  );
 
   &__photo {
     position: absolute;
@@ -46,18 +51,18 @@
   &__intro {
     position: absolute;
     top: 17vh;
-    left: 16vw;
+    left: 20vw;
     width: 60vw;
     height: 70vh;
     background: white;
     border-radius: 3px;
     z-index: 4;
-    box-shadow: 5px 5px 5px 0px rgba(168, 168, 168, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
     text-align: right;
-    padding: 90px;
+    padding: 90px 110px 90px 90px;
 
     @include xxl {
-      padding: 70px;
+      padding: 90px 110px 90px 90px;
     }
 
     @include xl {
@@ -91,7 +96,7 @@
   }
 
   &__name {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 88px;
     font-weight: 600;
     color: $titleColor;
@@ -123,7 +128,6 @@
     }
   }
 
-
   &__content {
     color: $mainLightGrey;
     font-size: 24px;
@@ -137,7 +141,7 @@
     }
 
     @include lg {
-      font-size: 18px
+      font-size: 18px;
     }
 
     @include xs {
@@ -151,8 +155,17 @@
     font-size: 20px;
     font-weight: 400;
 
+    a {
+      color: $primaryColor;
+
+      &:active,
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+
     @include xl {
-      font-size: 16px
+      font-size: 16px;
     }
 
     @include xs {
@@ -165,10 +178,11 @@
     width: 40vw;
     height: 85vh;
     position: absolute;
-    right: 13vw;
-    top: 8vh;
+    right: 25vw;
+    top: 10vh;
     z-index: 2;
-    transform: rotate(355deg);
+    transform: rotate(255deg);
+    border-radius: 3px;
 
     @include lg {
       height: 52vh;

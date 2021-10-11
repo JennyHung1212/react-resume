@@ -17,12 +17,12 @@
 
   @include md {
     width: 85vw;
-    padding: 70px 25px 40px
+    padding: 70px 25px 40px;
   }
 
   @include sm {
     width: 95vw;
-    padding: 70px 10px 20px
+    padding: 70px 10px 20px;
   }
 }
 
@@ -34,10 +34,10 @@
     font-weight: 700;
     font-size: 20px;
     text-align: center;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
 
     @include sm {
-      margin-bottom: 15px
+      margin-bottom: 15px;
     }
   }
 
@@ -118,19 +118,21 @@
 }
 
 .ant-progress-inner {
+  width: 100px !important;
+  height: 100px !important;
   @include sm {
-    width: 90px !important;
-    height: 90px !important;
+    width: 80px !important;
+    height: 80px !important;
   }
 }
 
 .ant-progress-circle .ant-progress-text {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   word-break: break-word;
-
+  padding: 0 5px;
   @include sm {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -138,31 +140,37 @@
 .ant-progress:nth-child(2),
 .ant-progress:nth-child(3),
 .ant-progress:nth-child(4) {
-  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
-    stroke: #70A582;
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+    .ant-progress-circle-path {
+    stroke: #70a582;
   }
 
   .ant-progress-text {
-    color: #70A582;
+    color: #70a582;
   }
 }
 
 .ant-progress:nth-child(5),
 .ant-progress:nth-child(6),
-.ant-progress:nth-child(7) {
-  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
-    stroke: #7093A5;
+.ant-progress:nth-child(7),
+.ant-progress:nth-child(8) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+    .ant-progress-circle-path {
+    stroke: #7093a5;
   }
 
   .ant-progress-text {
-    color: #7093A5;
+    color: #7093a5;
   }
 }
 
-.ant-progress:nth-child(8),
 .ant-progress:nth-child(9),
-.ant-progress:nth-child(10) {
-  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+.ant-progress:nth-child(10),
+.ant-progress:nth-child(11),
+.ant-progress:nth-child(12),
+.ant-progress:nth-child(13) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+    .ant-progress-circle-path {
     stroke: rgb(129, 124, 141);
   }
 
@@ -173,7 +181,8 @@
 
 .app .ant-progress:nth-child(1),
 .app .ant-progress:nth-child(2) {
-  .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+    .ant-progress-circle-path {
     stroke: rgb(146, 109, 134);
   }
 

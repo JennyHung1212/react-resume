@@ -1,12 +1,11 @@
 import React from "react";
 import "./scss/AboutMe.scss";
-
-// import { Menu } from "antd";
-// import "antd/dist/antd.css";
+import Header from "./Header";
 
 const AboutMe = () => {
   return (
     <div className="about-me" id="about_me">
+      <Header />
       <div className="section-title">
         <span>About Me</span>
       </div>
@@ -35,9 +34,9 @@ const AboutMe = () => {
         <p>
           The first feature I built was a calendar-view table with different
           settings listed with checkboxes and dropdown selects in every cell for
-          users to choose from according to date. The idea was originally drawn
-          and planned on paper, and now it was running on a browser and was
-          ACTUALLY doing something! That was truly magical and I knew that I
+          users to choose from according to date. The idea was originally to
+          draw and planned on paper, and now it was running on the browser and
+          was ACTUALLY doing something! That was truly magical and I knew that I
           have to stick to it, dive deeper, and convert more ideas from sketches
           and drafts to features on web pages.
         </p>
@@ -54,15 +53,15 @@ const AboutMe = () => {
           positive feedback on the features I built for them, and I love
           tackling with complicated UI design and receive the "WOW" look from
           others. Frontend developing is not just "coding", frontend developing
-          is about problem-solving, creativity, perspicacity and is the bridge
+          is about problem solving, creativity, perspicacity and is the bridge
           between users and programmers.
         </p>
         <p>
           My specialty includes data visualization, responsive web design, Model
-          View Controller (MVC) methodology, embedding third-party APIs and
-          problem solving. So far I have JavaScript, jQuery, HTML, CSS, Vue.js,
-          Bootstrap, Element UI, Ant Design and version control under my belt. I
-          have also learned Flutter for app development and other frontend
+          View Controller (MVC) methodology, embedding third-party APIs, and
+          problem-solving. So far I have JavaScript, jQuery, HTML, CSS, Vue.js,
+          Bootstrap, Element UI, Ant Design, and version control under my belt.
+          I have also learned Flutter for app development and other frontend
           techniques such as React.js and SEO.
         </p>
         <p>

@@ -7,6 +7,7 @@ import "antd/dist/antd.css";
 class Header extends React.Component {
   state = {
     current: "aboutMe",
+    lastScrollTop: 0,
   };
 
   handleClick = (e) => {
@@ -40,6 +41,26 @@ class Header extends React.Component {
         </Menu.Item>
       </Menu>
     );
+  }
+
+  componentDidMount() {
+    const menu = document.querySelector(".ant-menu");
+
+    window.addEventListener("scroll", (e) => {
+      let st = window.scrollY || document.documentElement.scrollTop;
+      if (st > window.innerHeight) {
+        menu.style.position = "fixed";
+        menu.style.top = 0;
+
+        if (st > this.state.lastScrollTop && st > 400 + window.innerHeight)
+          menu.style.top = "-70px";
+        else menu.style.top = "0";
+      } else {
+        menu.style.position = "absolute";
+      }
+
+      this.setState({ lastScrollTop: st <= 0 ? 0 : st });
+    });
   }
 }
 

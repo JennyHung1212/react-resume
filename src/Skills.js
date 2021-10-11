@@ -8,15 +8,17 @@ const Skills = () => {
   const skillsContent = {
     frontend: [
       { level: 90, skill: "HTML" },
-      { level: 90, skill: "CSS/SCSS /Stylus" },
+      { level: 90, skill: "CSS / SCSS / Stylus" },
       { level: 80, skill: "JavaScript" },
       { level: 75, skill: "jQuery" },
       { level: 85, skill: "Element UI" },
       { level: 70, skill: "Ant Design" },
       { level: 70, skill: "Bootstrap" },
-      { level: 75, skill: "Vue.js" },
+      { level: 40, skill: "Tailwind CSS" },
+      { level: 80, skill: "Vue.js / Vuex" },
       { level: 40, skill: "React.js" },
-      { level: 50, skill: "Jest" },
+      { level: 60, skill: "Flask" },
+      { level: 50, skill: "Electron" },
     ],
     app: [
       {
@@ -29,15 +31,19 @@ const Skills = () => {
       },
     ],
     others: [
-      "Git",
-      "Bitbucket",
-      "CircleCI",
-      "TestCafe",
-      "Babel",
-      "R",
-      "Vuex",
       "Python",
+      "JAVA",
+      "R",
+      "OOD",
+      "RWD",
+      "D3.js / ECharts",
+      "Git / Bitbucket",
+      "CircleCI",
+      "Jest (unit test)",
+      "TestCafe (end-to-end test)",
       "Django",
+      "MySQL",
+      "NoSQL",
     ],
     language: ["English (fluent)", "Chinese (native)"],
   };
@@ -45,6 +51,15 @@ const Skills = () => {
     <div className="skills" id="skills">
       <div className="section-title skills-title">
         <span>Skills</span>
+      </div>
+      <div
+        className="section-title-bg"
+        style={{
+          right: "-220px",
+          transform: "rotate(90deg)",
+        }}
+      >
+        skills
       </div>
       <div className="skills-content">
         <div className="skills-content__title">FRONTEND DEVELOPMENT</div>
