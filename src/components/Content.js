@@ -1,5 +1,5 @@
 import React from "react";
-import "./scss/Content.scss";
+import "../scss/Content.scss";
 
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";

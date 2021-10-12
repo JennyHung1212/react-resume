@@ -1,26 +1,32 @@
 import React from "react";
-import "./scss/Header.scss";
+import "../scss/Header.scss";
 
 import { Menu } from "antd";
 import "antd/dist/antd.css";
 
+import { connect } from "react-redux";
+import { setCurrentMenu } from "../redux/actions";
+import { getCurrentMenu } from "../redux/selectors";
+
+const mapStateToProps = (state) => {
+  return { current: getCurrentMenu(state) };
+};
+
 class Header extends React.Component {
-  state = {
-    current: "aboutMe",
-    lastScrollTop: 0,
-  };
+  constructor(props) {
+    super(props);
+    this.state = { lastScrollTop: 0 };
+  }
 
   handleClick = (e) => {
-    this.setState({
-      current: e.key,
-    });
+    this.props.setCurrentMenu(e.key);
   };
 
   render() {
     return (
       <Menu
         onClick={this.handleClick}
-        selectedKeys={[this.state.current]}
+        selectedKeys={[this.props.current]}
         mode="horizontal"
         className="top-nav"
       >
@@ -64,4 +70,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default connect(mapStateToProps, { setCurrentMenu })(Header);

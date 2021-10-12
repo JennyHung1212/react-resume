@@ -1,5 +1,5 @@
 import React from "react";
-import "./scss/Home.scss";
+import "../scss/Home.scss";
 // import self from "./image/self.jpg";
 
 import {

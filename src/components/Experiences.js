@@ -1,8 +1,11 @@
 import React from "react";
-import "./scss/Experiences.scss";
+import "../scss/Experiences.scss";
 
 import { Timeline } from "antd";
 import "antd/dist/antd.css";
+
+import { connect } from "react-redux";
+import { setCurrentMenu } from "../redux/actions";
 
 class Experiences extends React.Component {
   state = {
@@ -102,6 +105,20 @@ class Experiences extends React.Component {
   componentDidMount() {
     this.checkWidth();
     window.addEventListener("resize", this.checkWidth);
+
+    const experiences = document.getElementById("experiences");
+
+    window.addEventListener("scroll", () => {
+      const { top, left } = experiences.getBoundingClientRect();
+
+      if (
+        top >= 0 &&
+        left >= 0 &&
+        top <= (window.innerHeight || document.documentElement.clientHeight)
+      ) {
+        this.props.setCurrentMenu("experience");
+      }
+    });
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.checkWidth);
@@ -167,4 +184,4 @@ class Experiences extends React.Component {
   }
 }
 
-export default Experiences;
+export default connect(null, { setCurrentMenu })(Experiences);
