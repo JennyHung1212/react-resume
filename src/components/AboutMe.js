@@ -41,54 +41,37 @@ class AboutMe extends React.Component {
         </div>
         <div className="about-me__content">
           <p>
-            Hi, I'm Jenny Hung, a frontend developer with 3-year experience.
+            Hi, I'm Jenny Hung, a software engineer with 3-year experience. I'll
+            graduate with my master's degree in Software Engineering Systems in
+            May 2023 and am actively looking for positions open for summer 2023.
           </p>
           <p>
-            I almost gave up on becoming a programmer until I volunteered as a
-            frontend developer in an industry-academia project of a compulsory
-            course. I volunteered all for a lame reason, I thought frontend
-            tasks would involve less coding compared to backend tasks. I had
-            proved myself wrong once the project started, and I learned that
-            frontend developing is definitely more than just "coding" as I dug
-            deeper into the frontend world.
+            I've worked as a full-time and part-time frontend engineer for
+            almost three years. I'm passionate about building user-friendly,
+            neat, smooth, and interactive websites. My specialty includes data
+            visualization, responsive web design, Model View Controller (MVC)
+            methodology, integration of third-party APIs, SEO, and modern web
+            frameworks, including Vue.js and React.js. And then, I decided that
+            it was time to broaden my skill sets and advance my career path. So
+            I studied Software Engineer Systems, Master of Science at
+            Northeastern University, and interned as a full-stack engineer at
+            Boston's promising startup Acho. So now I also have relational and
+            non-relational databases, Node.js, Express.js, Streams API, OAuth
+            integration, and Socket API in my pocket.
           </p>
           <p>
-            The first feature I built was a calendar-view table with different
-            settings listed with checkboxes and dropdown selects in every cell
-            for users to choose from according to date. The idea was originally
-            to draw and planned on paper, and now it was running on the browser
-            and was ACTUALLY doing something! That was truly magical and I knew
-            that I have to stick to it, dive deeper, and convert more ideas from
-            sketches and drafts to features on web pages.
+            Apart from the technical skills, I've obtained the ability to
+            communicate and work with all kinds of people from different
+            cultural and professional backgrounds over the years during my
+            exchange years and internships. I may not always be the best
+            developer on the team, but I'll always be the one that people want
+            to work with and that I can guarantee.
           </p>
           <p>
-            Every time I browse a website, I can't help but start to think: If I
-            were the developer, how would I structure and built this page? Would
-            this button give a better user experience if it was on the
-            right-hand side not on the left-hand side? Or even open the dev
-            tools to see if the page works well with different screen sizes.
-            (And will be a little bit pleased inwardly if I spot something
-            wrong.) I love that I can "see through" the surface of a web page
-            and know how it works behind, I love implementing RWD and watch my
-            web pages expand or shrink to different sizes and still work well, I
-            love that when users give me positive feedback on the features I
-            built for them, and I love tackling with complicated UI design and
-            receive the "WOW" look from others. Frontend developing is not just
-            "coding", frontend developing is about problem solving, creativity,
-            perspicacity and is the bridge between users and programmers.
-          </p>
-          <p>
-            My specialty includes data visualization, responsive web design,
-            Model View Controller (MVC) methodology, embedding third-party APIs,
-            and problem-solving. So far I have JavaScript, jQuery, HTML, CSS,
-            Vue.js, Bootstrap, Element UI, Ant Design, and version control under
-            my belt. I have also learned Flutter for app development and other
-            frontend techniques such as React.js and SEO.
-          </p>
-          <p>
-            I have the brain as a programmer, the eyes as a UI designer, and the
-            mindset of the users. And I will always become a better developer
-            than yesterday me.
+            I have the brain of a programmer, the eyes of a UI designer, and the
+            mindset of the users, and I am super fortunate that I have the
+            skills to build services that can solve users' problems and make
+            this world a better place.
           </p>
         </div>
       </div>

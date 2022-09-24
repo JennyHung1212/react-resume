@@ -72,7 +72,7 @@
     p {
       padding: 2px 8px;
       border-radius: 3px;
-      background-color: rgba(206, 131, 153, 0.7);
+      background-color: rgba(148, 152, 156, 0.6);
       color: white;
       font-weight: 600;
       margin: 0 4px 8px 4px;
@@ -136,10 +136,9 @@
   }
 }
 
-.ant-progress:nth-child(1),
-.ant-progress:nth-child(2),
-.ant-progress:nth-child(3),
-.ant-progress:nth-child(4) {
+.fullstack .ant-progress:nth-child(1),
+.fullstack .ant-progress:nth-child(2),
+.fullstack .ant-progress:nth-child(3) {
   .ant-progress-inner:not(.ant-progress-circle-gradient)
     .ant-progress-circle-path {
     stroke: #70a582;
@@ -150,10 +149,7 @@
   }
 }
 
-.ant-progress:nth-child(5),
-.ant-progress:nth-child(6),
-.ant-progress:nth-child(7),
-.ant-progress:nth-child(8) {
+.fullstack .ant-progress:nth-child(4) {
   .ant-progress-inner:not(.ant-progress-circle-gradient)
     .ant-progress-circle-path {
     stroke: #7093a5;
@@ -164,11 +160,51 @@
   }
 }
 
-.ant-progress:nth-child(9),
-.ant-progress:nth-child(10),
-.ant-progress:nth-child(11),
-.ant-progress:nth-child(12),
-.ant-progress:nth-child(13) {
+.fullstack .ant-progress:nth-child(5),
+.fullstack .ant-progress:nth-child(6) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+    .ant-progress-circle-path {
+    stroke: rgb(129, 124, 141);
+  }
+
+  .ant-progress-text {
+    color: rgb(129, 124, 141);
+  }
+}
+
+.frontend .ant-progress:nth-child(1),
+.frontend .ant-progress:nth-child(2),
+.frontend .ant-progress:nth-child(3),
+.frontend .ant-progress:nth-child(4) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+    .ant-progress-circle-path {
+    stroke: #70a582;
+  }
+
+  .ant-progress-text {
+    color: #70a582;
+  }
+}
+
+.frontend .ant-progress:nth-child(5),
+.frontend .ant-progress:nth-child(6),
+.frontend .ant-progress:nth-child(7),
+.frontend .ant-progress:nth-child(8) {
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+    .ant-progress-circle-path {
+    stroke: #7093a5;
+  }
+
+  .ant-progress-text {
+    color: #7093a5;
+  }
+}
+
+.frontend .ant-progress:nth-child(9),
+.frontend .ant-progress:nth-child(10),
+.frontend .ant-progress:nth-child(11),
+.frontend .ant-progress:nth-child(12),
+.frontend .ant-progress:nth-child(13) {
   .ant-progress-inner:not(.ant-progress-circle-gradient)
     .ant-progress-circle-path {
     stroke: rgb(129, 124, 141);
@@ -180,13 +216,14 @@
 }
 
 .app .ant-progress:nth-child(1),
-.app .ant-progress:nth-child(2) {
+.app .ant-progress:nth-child(2),
+.app .ant-progress:nth-child(3) {
   .ant-progress-inner:not(.ant-progress-circle-gradient)
     .ant-progress-circle-path {
-    stroke: rgb(146, 109, 134);
+    stroke: rgb(176, 121, 146);
   }
 
   .ant-progress-text {
-    color: rgb(146, 109, 134);
+    color: rgb(176, 121, 146);
   }
 }

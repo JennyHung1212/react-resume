@@ -8,44 +8,53 @@ import { connect } from "react-redux";
 import { setCurrentMenu } from "../redux/actions";
 
 const skillsContent = {
+  fullstack: [
+    { level: 75, skill: "Java" },
+    { level: 65, skill: "Spring" },
+    { level: 75, skill: "Node.js / Express" },
+    { level: 65, skill: "SQL / NoSQL" },
+    { level: 50, skill: "AWS" },
+    { level: 40, skill: "GCP" },
+  ],
   frontend: [
     { level: 90, skill: "HTML" },
     { level: 90, skill: "CSS / SCSS / Stylus" },
     { level: 80, skill: "JavaScript" },
-    { level: 75, skill: "jQuery" },
+    { level: 75, skill: "TypeScript" },
     { level: 85, skill: "Element UI" },
     { level: 70, skill: "Ant Design" },
     { level: 70, skill: "Bootstrap" },
     { level: 40, skill: "Tailwind CSS" },
     { level: 80, skill: "Vue.js / Vuex" },
     { level: 40, skill: "React.js" },
-    { level: 60, skill: "Flask" },
-    { level: 50, skill: "Electron" },
   ],
   app: [
+    { level: 50, skill: "Electron" },
     {
-      level: 60,
+      level: 50,
       skill: "Dart",
     },
     {
-      level: 60,
+      level: 50,
       skill: "Flutter",
     },
   ],
   others: [
-    "Python",
-    "JAVA",
-    "R",
-    "OOD",
+    "Python (Flask, Django)",
+    "Object-Oriented Design",
     "RWD",
-    "D3.js / ECharts",
+    "D3.js",
+    "ECharts",
     "Git / Bitbucket",
     "CircleCI",
-    "Jest (unit test)",
-    "TestCafe (end-to-end test)",
-    "Django",
+    "JUnit",
+    "Jest",
+    "TestCafe",
     "MySQL",
-    "NoSQL",
+    "Redis",
+    "Streams API",
+    "OAuth",
+    "Elasticsearch",
   ],
   language: ["English (fluent)", "Chinese (native)"],
 };
@@ -69,6 +78,21 @@ class Skills extends React.Component {
           <div className="skills-content__title">FRONTEND DEVELOPMENT</div>
           <div className="skills-content__items frontend">
             {skillsContent.frontend.map((o, idx) => (
+              <Progress
+                key={idx}
+                type="circle"
+                percent={o.level}
+                format={() => o.skill}
+                strokeLinecap="square"
+                strokeWidth="4"
+              />
+            ))}
+          </div>
+        </div>
+        <div className="skills-content">
+          <div className="skills-content__title">FULLSTACK DEVELOPMENT</div>
+          <div className="skills-content__items fullstack">
+            {skillsContent.fullstack.map((o, idx) => (
               <Progress
                 key={idx}
                 type="circle"

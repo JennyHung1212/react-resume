@@ -29,7 +29,7 @@ class Home extends React.Component {
           <p className="home__name">Hi, I'm</p>
           <p className="home__name">Jenny Hung</p>
           <p className="home__content">
-            I'm a frontend developer, a software engineer, an eager learner,
+            I'm a fullstack engineer, an eager learner,
             <br></br> and also an adventurer.
           </p>
           <div className="home__info">

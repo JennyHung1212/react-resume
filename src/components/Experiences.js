@@ -11,18 +11,30 @@ class Experiences extends React.Component {
   state = {
     experiences: [
       {
-        name: "Northeastern University (NU), US",
+        name: "Acho, Boston, MA",
+        type: "company",
+        year: "2022/01 ~ 2022/08",
+        position: "Full-Stack Software Development Engineer Intern",
+        content: [
+          "<span class='num-icon'>①</span> Adopted <span class='highlight-text'>BigQuery</span> and <span class='highlight-text'>MySQL</span> as the infrastructure of a big-data system and utilized <span class='highlight-text'>TypeScript</span> for data modeling and REST APIs development.",
+          "<span class='num-icon'>②</span> Utilized Node.js <span class='highlight-text'>Streams API</span> to process data measured with GB and improved read efficiency.</span>",
+          "<span class='num-icon'>③</span> Developed internal npm package using <span class='highlight-text'>TypeScript</span>, wrote unit tests with <span class='highlight-text'>JEST</span> and implemented auto-testing.</span>",
+          "<span class='num-icon'>④</span> Built interactive charts and spreadsheet-like table view with <span class='highlight-text'>Vue.js, D3.js, and G2Plot</span> to allow users to visualize raw data and obtain business insights.</span>",
+        ],
+      },
+      {
+        name: "Northeastern University (NU), MA",
         type: "school",
         year: "2021/09 ~ 2023/05 (expected)",
         position: "MS, Software Engineering Systems",
         content: [
-          "<span class='num-icon'>①</span> Courses: Program Structures & Algorithms, Concepts of Object-oriented Design (<span class='highlight-text'>JAVA</span>)",
+          "<span class='num-icon'>①</span> Courses: Program Structures & Algorithms, Concepts of Object-oriented Design (<span class='highlight-text'>JAVA</span>), Network Structures & Cloud Computing (<span class='highlight-text'>AWS</span>), Advanced Big-Data & Indexing (<span class='highlight-text'>NoSQL, Redis</span>), User Experience Design & Testing",
         ],
       },
       {
-        name: "Owlsome Tech, TW",
+        name: "Owlsome Tech, Taipei, Taiwan",
         type: "company",
-        year: "2019/07 ~ present",
+        year: "2019/07 ~ 2021/08",
         position: "Frontend / App Developer",
         content: [
           "<span class='num-icon'>①</span> Designed and developed the user interface of an online enterprises & talents database system using <span class='highlight-text'>Flask</span> and <span class='highlight-text'>MongoDB</span>. The data of the system includes all the companies registered with the Ministry of Economic Affairs and all the theses in the National Digital Library of Theses and Dissertations.",
@@ -42,7 +54,7 @@ class Experiences extends React.Component {
         ],
       },
       {
-        name: "Singapore University of Technology and Design (SUTD), SG",
+        name: "Singapore University of Technology and Design (SUTD), Singapore",
         type: "school",
         year: "2019/01 ~ 2019/05",
         position: "Exchange student, Information Systems Technology and Design",
@@ -53,7 +65,7 @@ class Experiences extends React.Component {
         ],
       },
       {
-        name: "Gogolook, TW",
+        name: "Gogolook, Taipei, Taiwan",
         type: "company",
         year: "2018/04 ~ 2019/01",
         position: "Frontend Engineer Intern",
@@ -63,7 +75,7 @@ class Experiences extends React.Component {
         ],
       },
       {
-        name: "edallianz, SG",
+        name: "edallianz, Taipei, Taiwan",
         type: "company",
         year: "2017/11 ~ 2018/02",
         position: "App API / Testing Engineer Intern",
@@ -72,7 +84,7 @@ class Experiences extends React.Component {
         ],
       },
       {
-        name: "IBM, TW",
+        name: "IBM, Taipei, Taiwan",
         type: "company",
         year: "2017/07 ~ 2017/08",
         position: "Application Consultant Intern",
@@ -82,7 +94,7 @@ class Experiences extends React.Component {
         ],
       },
       {
-        name: "National Taiwan University (NTU), TW",
+        name: "National Taiwan University (NTU), Taipei, Taiwan",
         type: "school",
         year: "2014/09 ~ 2019/06",
         position: "BBA, Information Management",
@@ -139,8 +151,8 @@ class Experiences extends React.Component {
           {this.state.experiences.map((o, idx) => {
             let position;
             if (this.state.isWideScreen) {
-              if (idx % 2) position = "left";
-              else position = "right";
+              if (idx % 2) position = "right";
+              else position = "left";
             }
 
             return (
